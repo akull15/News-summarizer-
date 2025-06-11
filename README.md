@@ -31,14 +31,14 @@ Press Summarize → Returns a short, accurate summary.
 
 Works on CPU or GPU environments.
 
-Requirements
+Requirements:
+
 Install the required Python libraries:
+
 pip install -r requirements.txt
+
 Contents of requirements.txt:
 
-makefile
-Copy
-Edit
 numpy
 pandas
 transformers==4.41.1
