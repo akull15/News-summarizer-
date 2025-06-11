@@ -1,40 +1,32 @@
-📰 News Summarization & Recommendation System
-An intelligent web-based NLP application that generates concise summaries of long-form news articles and recommends similar news headlines. Built with cutting-edge Transformer models from Hugging Face and deployed via Gradio for an intuitive user experience.
+📰 News Summarizer Web App
+Generate concise summaries from long-form news articles using state-of-the-art NLP models.
+Built with Hugging Face Transformers and Gradio for an intuitive web interface.
 
-🚀 Features
-✅ Summarization of News Articles
-✅ Transformer-based NLP (BART-large-cnn)
-✅ Real-time Text Generation
-✅ Clean, Minimal Web Interface (Gradio)
-✅ Easy Deployment (Local or Hugging Face Spaces)
-✅ Extensible for Future Enhancements
+Dataset
+Pre-trained Model: facebook/bart-large-cnn
 
-🎯 How It Works
-Model Used:
-facebook/bart-large-cnn – a pre-trained Transformer model fine-tuned specifically for summarization tasks.
+Summary Generation Task
 
-Architecture:
-Encoder-Decoder sequence-to-sequence model based on BART (Bidirectional and Auto-Regressive Transformers). The encoder compresses the input, while the decoder generates coherent summaries.
+How It Works
+1. Text Preprocessing
+Raw news articles are tokenized using the pre-trained BART tokenizer.
+
+Articles longer than the model’s max token length are truncated appropriately.
+
+Cleaned and prepared for the model input.
+
+2. Model Architecture
+Encoder-Decoder Architecture (BART)
+
+Pre-trained on CNN/DailyMail dataset for summarization tasks.
 
 Pipeline:
 
-Input long news article
+Article → Encoder → Compressed Representation → Decoder → Summary
 
-Model processes and compresses information
+3. Web Interface (Gradio)
+User pastes or uploads a news article.
 
-Returns short, human-readable summaries
+Press Summarize → Returns a short, accurate summary.
 
-Tech Stack:
-
-Python
-
-Transformers (Hugging Face)
-
-Gradio
-
-PyTorch backend
-
-
-🌐 Deployment Options
-  ✅ Local → python news_summarizer_gradio.py
-  ✅ Hugging Face Spaces (Recommended) → https://huggingface.co/spaces
+Works on CPU or GPU environments.
