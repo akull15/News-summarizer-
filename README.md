@@ -49,11 +49,13 @@ scikit-learn
 beautifulsoup4
 requests
 
-Training
+Training :
+
 No custom training required for this project as it uses pre-trained weights.
 Fine-tuning can be added later if needed for custom datasets.
 
-Real-time Usage
+Real-time Usage:
+
 Loads the pre-trained BART summarizer on app launch.
 
 Accepts long news texts as input.
