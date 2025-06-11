@@ -40,18 +40,26 @@ pip install -r requirements.txt
 Contents of requirements.txt:
 
 numpy
+
 pandas
+
 transformers==4.41.1
+
 torch>=2.0.0
+
 sentencepiece
+
 gradio==4.15.0
+
 scikit-learn
-beautifulsoup4
+
 requests
+
 
 Training :
 
 No custom training required for this project as it uses pre-trained weights.
+
 Fine-tuning can be added later if needed for custom datasets.
 
 Real-time Usage:
@@ -78,6 +86,7 @@ Upload project files (including this README, requirements.txt, and .py file).
 Click Deploy.
 
 Future Enhancements
+
 🔖 Integrate news recommendation system using embeddings or content similarity.
 
 🌐 Add web scraping functionality to fetch live news.
